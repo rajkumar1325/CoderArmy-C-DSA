@@ -24,7 +24,6 @@ int main(){
 
 /*
                                     //PRINTING TABLE
-*/
     cout<<"Enter your number";
     int number;
     cin>>number;
@@ -41,6 +40,8 @@ int main(){
     for (int i = 5; i <= 50; i= i+5)
         cout<<i << " ";
 }
+
+*/
 
 
 /*
@@ -59,7 +60,7 @@ int main()
             total = i*total;
         }
         cout<<"The factorial is "<< total;
-    */
+*/
 
 
 /*
@@ -100,7 +101,7 @@ int main()
 
 
 
-*/
+
 
 
 
