@@ -4,8 +4,7 @@ int main(){
     cout<<"Printing the ASCII value of the Alphabet \n";
     
 /*
-
-                                            //printing a to z
+                                          //printing a to z
     for (char name = 'a'; name <= 'z'; name++) //a is assigned to 98(ASCII) and then see data-type(float), therefore, again convert the ASCII to character
     {
         cout<<name<<" ";
