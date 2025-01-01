@@ -78,7 +78,6 @@ int main()
         }
         cout << "prime";
     }
-
 */
 
 
@@ -93,7 +92,6 @@ int main()
         previous = current;
         cout<<current<< " ";
     }
-    
 }
 
 */
