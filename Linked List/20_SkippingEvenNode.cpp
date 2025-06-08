@@ -15,12 +15,15 @@ class Node{
 
 
 int main(){
+
+    vector<int> hello = {1,2,3,4,5, 6};
+    // vector<int> hello = {1,2,3,4,5,6,7,8,9,10};
     // create a linkedlist
     Node * head = NULL;
     Node * tail = NULL;
     
-    int i=1;
-    while(i<=10){
+    for (int i: hello){
+    
         Node * temp = new Node(i); //crating node
 
         if(head == NULL){
@@ -32,7 +35,6 @@ int main(){
             tail = temp; //move
         }
 
-        i++;
     }
 
     
@@ -45,11 +47,15 @@ int main(){
     }
     
 
+    
+
     // CREATING A LINKED-LIST OF ODD INDICES
     Node *odd = head;
     while(odd != NULL){
-        odd->next = odd->next->next; //skip the next in each iteration and link to next
-        odd = odd->next; //moving
+        if(odd->next != NULL){ //it means we have only 1 node left, leave it
+            odd->next = odd->next->next; //skip the next in each iteration and link to next
+            odd = odd->next; //moving
+        } 
     }
 
 
